@@ -20,17 +20,17 @@ Este é um sistema para gerenciamento de jogadores de um time, permitindo o regi
 
 ## Instalação e Configuração
 
-1. Clone o repositório:
-   git clone https://github.com/seu-usuario/gerenciamento-jogadores.git
+1. Clone o repositório:  
+   git clone https://github.com/GuilhermeTBedin/gerenciamento-jogadores.git  
    cd gerenciamento-jogadores
-2. Instale as dependências:
-   npm install
-3. Configure o arquivo .env com as variáveis de ambiente necessárias, como a URL do banco de dados e a chave jwt.
-4.Execute as migrações do Prisma para configurar o banco de dados
-  npx prisma migrate dev
-5. Inicie o servidor em modo de desenvolvimento:
-  npm run dev
-6. Acesse a documentação da API no navegador:
+2. Instale as dependências:  
+   ``npm install``  
+3. Configure o arquivo .env com as variáveis de ambiente necessárias, como a URL do banco de dados e a chave jwt.  
+4. Execute as migrações do Prisma para configurar o banco de dados:  
+   ``npx prisma migrate dev``  
+5. Inicie o servidor em modo de desenvolvimento:  
+  ``npm run dev``  
+6. Acesse a documentação da API no navegador:  
   http://localhost:3000/api-docs
 
 ## Rotas da API
@@ -39,11 +39,10 @@ Times
 - POST /team/login: Login do time e geração de token JWT.
 
 Jogadores (Rotas Protegidas)
--GET /team/players: Listagem de todos os jogadores.
-<!-- -GET /team/player/:id: Busca de um jogador específico. -->
--POST /team/player: Criação de um jogador.
--PUT /team/player/:id: Atualização de dados de um jogador.
--DELETE /team/player/:id: Exclusão de um jogador.
+- GET /team/players: Listagem de todos os jogadores.
+- POST /team/player: Criação de um jogador.
+- PUT /team/player/:id: Atualização de dados de um jogador.
+- DELETE /team/player/:id: Exclusão de um jogador.
 
 ## Melhorias Futuras
 
